@@ -1,13 +1,11 @@
 import React, { useState, useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-
 import { GlobalContext } from '../context/GlobalState';
 
 export const AddEmployee = () => {
   let history = useHistory();
 
   const { addEmployee, employees,departments } = useContext(GlobalContext);
-
   const [fullname, setName] = useState("");
   const [email, setEmail] = useState("");
   const [maritalStatus, setMaritalStatus] = useState("");
